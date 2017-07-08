@@ -1,0 +1,17 @@
+/**页面设置 #group=基础设置#templist=enum_add_op{state}*/
+entity Doc_Setting{
+/**对象*/
+obj Object
+}
+/**状态机*/
+entity StateMachine{
+/**草稿*/
+draft State1,
+/**启用*/
+enabled State2
+
+/**启用*/
+enable Draft_Enabled
+/**停用*/
+cancel Enabled_Draft
+} 

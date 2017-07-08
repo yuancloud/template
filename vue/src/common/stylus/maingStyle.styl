@@ -1,0 +1,621 @@
+.toplevelcss
+  width 100%
+  height 100%
+  position relative
+  z-index 300
+  background-color #fff
+  display flex
+  flex-direction column
+  &>.containercss
+    flex 1
+    width 100%
+    box-sizing border-box
+    border-bottom .1rem solid #f5f5f5
+    overflow-y auto
+    &>p
+      height .4rem
+      line-height .3rem
+      font-size .15rem
+      color #777
+      font-weight bold
+      box-sizing border-box
+      border-top .1rem solid #f5f5f5
+      padding-left .15rem
+      text-align left
+      position relative
+      background-color #fff
+      &>i
+        position absolute
+        top .05rem
+        left 0
+        width .05rem
+        height .2rem
+        background-color #7a79f1
+    &>.maincss
+      width 100%
+      background-color #fff
+      overflow hidden
+      position relative
+      &>span
+        float left
+        width 100%
+        height .2rem
+        color #9c4294
+        font-size .14rem
+        text-align right
+        box-sizing border-box
+        padding-right .2rem
+    &>.subcss
+      width 100%
+      min-height .2rem
+      background-color #fff
+      overflow hidden
+      position relative
+      &>span
+        float left
+        width 100%
+        height .2rem
+        color #9c4294
+        font-size .14rem
+        text-align right
+        box-sizing border-box
+        padding-right .2rem
+      &>.subitemcss
+        clear both
+        box-sizing border-box
+        padding .1rem .1rem .2rem .1rem
+        text-align left
+        border-top .01rem solid #cacaca
+        &>span
+          float left
+          width 100%
+          height .2rem
+          color #9c4294
+          font-size .14rem
+          text-align right
+          box-sizing border-box
+          padding-right .1rem
+        &>.workingPeriod
+          height .3rem
+          font-size .15rem
+          line-height .3rem
+        &>.companyPosition
+          height .3rem
+          font-size .15rem
+          line-height .3rem
+          font-weight bold
+        &>.jobDescription
+          height 1rem
+          font-size .14rem
+          line-height .14rem
+          background-color #f5f5f5
+    .edit_string
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      position relative
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+      &>.pointer
+        position absolute
+        top 0
+        right 0
+        text-align right
+    .edit_phone
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      line-height .3rem
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_email
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_enum
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_boolean
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_refuser
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_enumstate
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_enum
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_year
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_integer
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_yearmonth
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_refdoc
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      position relative
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+      &>.pointer
+        position absolute
+        top 0
+        right 0
+        text-align right
+    .edit_double
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_double
+      width 100%
+      display flex
+      height .3rem
+      line-height .3rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .3rem
+        font-size .14rem
+        color: #777
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+    .edit_img
+      width 100%
+      display flex
+      height .5rem
+      line-height .5rem
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        width .7rem
+        height .5rem
+        font-size .14rem
+        color: #777
+        line-height .5rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+        overflow hidden
+      &>div
+        flex 1
+        &>img
+          float right
+          margin-top .05rem
+          margin-right .1rem
+          width .4rem
+          height .4rem
+          border-radius 6px
+          overflow hidden
+    .edit_imglist
+      width 100%
+      background-color #fff
+      box-sizing border-box
+      padding-left .1rem
+      text-align left
+      &>span
+        float left
+        width 100%
+        height .3rem
+        font-size .14rem
+        color: #777
+        text-align: left
+        line-height .3rem
+        margin-right .1rem
+        box-sizing border-box
+        padding-left .1rem
+        overflow hidden
+      &>div
+        width 100%
+        &>.edit_imglist_item
+          width .8rem
+          height .8rem
+          margin-left .075rem
+          margin-bottom .08rem
+          float left
+          text-align center
+          &>img
+            max-width .8rem
+            height .8rem
+  &>.viewBigPicture
+    width 100%
+    height 100%
+    background-color #000
+    position relative
+    z-index 300
+    &>.pictureTabBar
+      width 100%
+      height .44rem
+      background-color #fff
+      line-height: .44rem
+      box-sizing: border-box
+      padding: 0 .2rem
+      overflow hidden
+      position relative
+      &>.back
+        font-size: .18rem
+        position: absolute
+        left: .2rem
+        top: 0
+      &>.getPicture
+        position absolute
+        right .2rem
+        top 0
+        font-size .18rem
+        width .3rem
+        text-align center
+    &>.showImg
+      position absolute
+      top 50%
+      left 50%
+      margin-top -1.6rem
+      margin-left -1.2rem
+      width 2.4rem
+      height 2.4rem
+      &>img
+        max-width 2.4rem
+        height 2.4rem
+      &>input
+        position absolute
+        right 0
+        top 0
+        width 2.4rem
+        height 2.4rem
+        opacity 0
+  &>.refToplevel
+    width 100%
+    height 100%
+    position relative
+    z-index 300
+    background-color #fff
+    display flex
+    flex-direction column
+    &>.refContainer
+      width 100%
+      flex 1
+      box-sizing border-box
+      border-bottom .1rem solid #f5f5f5
+      overflow-y auto
+      &>.refRecord
+        width 100%
+        height .4rem
+        box-sizing border-box
+        padding 0 .1rem
+        font-size .14rem
+        line-height .4rem
+        border-bottom .01rem solid #f5f5f5
+        color #777
+        text-align left
+        &>.selectItem
+          float right
+          margin-right .1rem
+          font-size .12rem
+          line-height .4rem
+          color #7a79f1
+  &>.goEditString
+    width 100%
+    height 100%
+    background-color #000
+    position relative
+    z-index 300
+    display flex
+    flex-direction column
+    &>.stringTabBar
+      width 100%
+      height .44rem
+      background-color #fff
+      line-height: .44rem
+      box-sizing: border-box
+      padding: 0 .2rem
+      overflow hidden
+      position relative
+      &>.back
+        font-size: .18rem
+        position: absolute
+        left: .2rem
+        top: 0
+      &>.getPicture
+        position absolute
+        right .2rem
+        top 0
+        font-size .18rem
+        width .3rem
+        text-align center
+    &>.stringContainer
+      flex 1
+      background-color #f5f5f5
+      box-sizing border-box
+      padding-top .3rem
+      &>.stringInput
+        width 90%
+        height .3rem
+        margin 0 auto
+        box-sizing border-box
+        border .01rem solid #cacaca
+        border-radius 6px
+        overflow hidden
+        padding 0 .18rem
+        background-color #fff
+        &>input
+          width 100%
+          height 100%
+      &>.save
+        margin-top .2rem
+        &>.saveHandle
+          width 1.68rem
+          height .3rem
+          background-color #7a79f1
+          box-sizing border-box
+          border-radius .15rem
+          margin 0 auto
+          color #fff
+          line-height .3rem
+  &>.goEditInt
+    width 100%
+    height 100%
+    background-color #000
+    position relative
+    z-index 300
+    display flex
+    flex-direction column
+    &>.intTabBar
+      width 100%
+      height .44rem
+      background-color #fff
+      line-height: .44rem
+      box-sizing: border-box
+      padding: 0 .2rem
+      overflow hidden
+      position relative
+      &>.back
+        font-size: .18rem
+        position: absolute
+        left: .2rem
+        top: 0
+      &>.getPicture
+        position absolute
+        right .2rem
+        top 0
+        font-size .18rem
+        width .3rem
+        text-align center
+    &>.intContainer
+      flex 1
+      background-color #f5f5f5
+      box-sizing border-box
+      padding-top .3rem
+      &>.intInput
+        width 90%
+        height .3rem
+        margin 0 auto
+        box-sizing border-box
+        border .01rem solid #cacaca
+        border-radius 6px
+        overflow hidden
+        padding 0 .18rem
+        background-color #fff
+        &>input
+          width 100%
+          height 100%
+      &>.save
+        margin-top .2rem
+        &>.saveHandle
+          width 1.68rem
+          height .3rem
+          background-color #7a79f1
+          box-sizing border-box
+          border-radius .15rem
+          margin 0 auto
+          color #fff
+          line-height .3rem
+  &>.edit_save
+    width 100%
+    height .44rem
+    background-color #fff
+    line-height .44rem
+    &>div
+      width 1.68rem
+      height .3rem
+      font-size .16rem
+      line-height .3rem
+      border-radius .06rem
+      color #fff
+      margin .07rem auto
+      font-weight bold
+      background-color #9c4294

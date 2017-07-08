@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- IE8及以下支持JSON -->
+  <!--[if lt IE 9]>
+        <script src="https://g.alicdn.com/aliww/ww/json/json.js" charset="utf-8"></script>
+    <![endif]-->
+  <!-- 自动适配移动端与pc端 -->
+  <script src="https://g.alicdn.com/aliww/??h5.imsdk/2.1.5/scripts/yw/wsdk.js,h5.openim.kit/0.4.0/scripts/kit.js" charset="utf-8"></script>
+</head>
+
+<body>
+</body>
+<script>
+  window.onload = function () {
+    let userid = ''
+    const users = localStorage.getItem('user');
+    data = JSON.parse(users);
+    const ps = data.password;
+    fetch('http://lztogether.leanapp.cn/api/uid', { method: 'POST', body: JSON.stringify(data), headers: { "Content-Type": "application/json" } })
+      .then(result => {
+        return result.json()
+      })
+      .then(data => {
+        if (!data.uid_fail.string) {
+          userid = data.uid_succ.string[0]
+        } else {
+          userid = data.uid_fail.string[0]
+        }
+        WKIT.init({
+          uid: userid.toString(),
+          appkey: 23773942,
+          credential: ps,
+          touid: 'lztx联众同行',
+          sendMsgToCustomService: true,
+          groupId: 161953358,
+          onMsgSent: function () {
+            console.log('发送成功');
+          },
+          onMsgReceived: function () {
+            console.log('收到消息');
+          }
+        });
+      })
+  }
+
+</script>
+
+</html>

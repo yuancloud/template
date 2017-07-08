@@ -1,0 +1,32 @@
+/**流水 #group=财务管理#index=20#templist=enum_op{state}*/
+entity Order_Transfer{
+      /**来源账户*/
+    fromAccount String
+    /** 订单 */
+    order REF_Order
+    /** 单号 */
+    orderno String
+    /**回调对象*/
+    orderinfo Object
+    }
+    entity StateMachine{
+      /**草稿*/
+      draft State1,
+      /**核准中*/
+      approving State2,
+      /**进行中*/
+      inprogressing State3,
+      /**关闭*/
+      closed State4
+      /**提交*/
+      submit Draft_approving,
+      /**核准*/
+      approve Approving_inprogressing,
+      /**拒绝*/
+      reject Approving_closed,
+      /**关闭*/
+      close Inprogressing_closed,
+      /**打开*/
+      open Closed_draft
+    } 
+

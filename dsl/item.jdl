@@ -1,0 +1,38 @@
+/**商品 #group=商品管理 #index=20#templist=enum_op_add{state}#tempedit=edit{supplier&store&technician}*/
+entity Doc_Item{
+/**价格*/
+price Double
+/**描述*/
+desc String
+/**商品分类*/
+type Enum_ItemType
+}
+/**商品类型*/
+entity Enum_ItemType{
+    /**照片*/
+    photo Literal1,
+    /**文件*/
+    file Literal2,
+}
+
+entity StateMachine{
+/**草稿*/
+draft State1
+/**核准中*/
+approving State2
+/**进行中*/
+inprogressing State3
+/**关闭*/
+closed State4
+/**提交*/
+submit Draft_approving
+/**核准*/
+approve Approving_inprogressing
+/**拒绝*/
+reject Approving_closed
+/**关闭*/
+close Inprogressing_closed
+/**打开*/
+open Closed_draft
+} 
+

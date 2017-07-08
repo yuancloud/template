@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+start.bat
+.idea
+.vscode
+*.ex.js
+public/
+.leancloud/
